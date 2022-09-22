@@ -1,4 +1,5 @@
 accept-terms-of-use: true
+chain-id: $GETH_NETWORK_ID
 datadir: /validator_data
 wallet-dir: /keystore/prysm
 wallet-password-file: /keystore/password.txt
@@ -6,4 +7,4 @@ chain-config-file: /configs/config.yaml
 monitoring-host: "0.0.0.0"
 grpc-gateway-host: "0.0.0.0"
 rpc-host: "0.0.0.0"
-suggested-fee-recipient: $GETH_ETHERBASE
+suggested-fee-recipient: "${GETH_ETHERBASE}"

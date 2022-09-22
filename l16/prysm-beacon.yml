@@ -1,5 +1,5 @@
 accept-terms-of-use: true
-chain-id: 2828
+chain-id: $GETH_NETWORK_ID
 genesis-state: /configs/genesis.ssz
 datadir: /consensus_data
 bootstrap-node: ["${PRYSM_BOOTSTRAP_NODE}"]
@@ -10,7 +10,7 @@ monitoring-host: "0.0.0.0"
 grpc-gateway-host: "0.0.0.0"
 rpc-host: "0.0.0.0"
 verbosity: "${PRYSM_VERBOSITY}"
-suggested-fee-recipient: $GETH_ETHERBASE
+suggested-fee-recipient: "${GETH_ETHERBASE}"
 min-sync-peers: 2
 contract-deployment-block: 0
 genesis-beacon-api-url: "http://34.91.41.150:3500" #Value hardcoded since this is striclty used for L16
