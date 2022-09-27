@@ -1,5 +1,5 @@
 accept-terms-of-use: true
-chain-id: 2828
+chain-id: 1600
 datadir: /validator_data
 wallet-dir: /keystore/prysm
 wallet-password-file: /keystore/password.txt
